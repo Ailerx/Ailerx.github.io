@@ -27,6 +27,16 @@ Modal.prototype.open=function()
         document.body.appendChild(this.modalBox)
         this.modalBox.querySelector('button').addEventListener('click',()=>{
             this.close()
+            console.log(words);
+            console.log(words_1);
+            for(let i=0; i<words_1.length; i++)
+            {
+                words.push(words_1[i])
+                words_1.pop(words_1[i])
+            }
+            console.log(words);
+            document.querySelector('.text').innerHTML='Ailerx'
+            document.querySelector('.answer').value=''
             game.style.display='none '  
             content.style.display='block'
         })

@@ -5,6 +5,9 @@ body{
     display: flex;
     margin: 0;
     flex-direction: column;
+    background-image: url(/Images/bg1.png);
+    background-size: cover;
+    background-attachment: fixed;
     /* position: relative; */
 }
 .setting{
@@ -19,6 +22,19 @@ body{
     transform: translateY(0);
     transition: transform 0.3s ease-in-out;
 }
+.backMain{
+    background-color: rgb(103, 205, 51);
+    text-align: center;
+    line-height: 32px;
+    justify-content: center;
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 35px;
+    top: 100px;
+    left: 30px;
+}s
 .tab{
     height: 50px;
     /* width: 100%; */
@@ -86,6 +102,7 @@ select{
     margin-left: 115px;
     border-radius: 10px;
     cursor: pointer;
+    border-style: none;
 }
 .game{
     background-color: aqua;
